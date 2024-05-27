@@ -8,7 +8,7 @@ This project is a frontend assessment built using Vue.js. It allows users to upl
 
 - **Upload**: After previewing the document, users can click on the upload button to finalize the upload process. Once uploaded, the `file names are displayed` with a `delete button` next to each name.
 
-## How to Use
+## How to Install
 
 1. Clone the repository to your local machine.
 
@@ -20,3 +20,7 @@ This project is a frontend assessment built using Vue.js. It allows users to upl
     ```
 4. Open your browser and navigate to `http://localhost:5173/` to view the application.
 
+## Preview of the App
+<p align="center">
+  <img src=https://github.com/lorraineC26/swift-ft-assessment/blob/main/public/00overview.png?raw=true alt="hero" width="500px" style="display: block; margin: 0 auto;">
+</p>
