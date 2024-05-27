@@ -50,6 +50,17 @@ header {
   color: #aaa;
 }
 
+#drop-zone label {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #1b995e;
+  transition: 0.3s ease all;
+}
+
+#drop-zone input {
+  display: none;
+}
+
 iframe {
   border: none;
   margin-top: 1rem;
