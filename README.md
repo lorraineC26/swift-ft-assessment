@@ -1,35 +1,22 @@
-# swift-test
+# SWIFT Frontend Assessment
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a frontend assessment built using Vue.js. It allows users to upload documents and preview them before finalizing the upload process. The main features include:
 
-## Recommended IDE Setup
+- **Document Upload**: Users can upload documents either by `dragging and dropping` them into the designated area or by `selecting them using a button`.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Preview**: Once a document is selected, users can preview it to ensure it is the correct file they want to upload.
 
-## Customize configuration
+- **Upload**: After previewing the document, users can click on the upload button to finalize the upload process. Once uploaded, the `file names are displayed` with a `delete button` next to each name.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## How to Use
 
-## Project Setup
+1. Clone the repository to your local machine.
 
-```sh
-npm install
-```
+2. Install dependencies using npm.
 
-### Compile and Hot-Reload for Development
+3. Run the development mode
+    ```bash
+    npm run dev
+    ```
+4. Open your browser and navigate to `http://localhost:5173/` to view the application.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
