@@ -11,30 +11,28 @@ const app = Vue.createApp({
 
       const file = event.dataTransfer.files[0]
 
-      // debugging
-      console.log('File dropped:', file.name)
-
       this.fileName = file.name
       this.pdfUrl = URL.createObjectURL(file)
     },
 
     uploadDoc() {
-      // debugging
-      console.log('Uploading doc:', this.fileName)
-
       // only allow uploading if there is a file name
       if (this.fileName !== '') {
         this.documents.push(this.fileName)
-        this.fileName = ''; // reset the file name after uploading
+        this.fileName = '' // reset the file name after uploading
       }
     },
 
+    // remove the document from the documents array
     deleteDoc(index) {
-      // debugging
-      console.log('Deleting doc:', this.documents[index])
-
-      // remove the document from the list
       this.documents.splice(index, 1)
+    },
+
+    handleFileSelect(event) {
+      const file = event.target.files[0]
+
+      this.fileName = file.name
+      this.pdfUrl = URL.createObjectURL(file)
     }
   }
 })

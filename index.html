@@ -40,9 +40,9 @@
         >
           <p v-if="!pdfUrl">Drag & drop your PDF here</p>
   
-          <!-- <span>OR</span> <br /><br />
-          <label for="dropzoneFile">Select File</label>
-          <input type="file" id="dropzoneFile" /> -->
+          <span>OR</span> <br /><br />
+          <label for="dropzoneFile" class="browse-label">Select File</label>
+          <input type="file" id="dropzoneFile" @change="handleFileSelect" accept="application/pdf"  style="display: none;"/>
   
           <iframe v-if="pdfUrl" :src="pdfUrl" width="100%" height="600px"></iframe>     
         </div>
