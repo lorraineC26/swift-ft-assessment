@@ -1,28 +1,33 @@
 const app = Vue.createApp({
+  
+  //  returns the initial state
   data() {
     return { documents: [], fileName: '', pdfUrl: null }
   },
-  methods: {
-    handleDragOver(event) {
-      event.preventDefault()
-      console.log('Drag over event:', event) // Check if dragover event is captured
-    },
 
+  methods: {
     handleDrop(event) {
+      // prevent the browser from opening the file
       event.preventDefault()
+
       const file = event.dataTransfer.files[0]
-      console.log('File dropped:', file.name) // debugging
+
+      // debugging
+      console.log('File dropped:', file.name)
+
       this.fileName = file.name
       this.pdfUrl = URL.createObjectURL(file)
     },
 
     uploadDoc() {
+      // debugging
+      console.log('Uploading doc:', this.fileName)
+      
       this.documents.push(this.fileName)
       this.fileName = ''
     }
-
-
   }
 })
 
-app.mount('#user-docs')
+// the app div wrap both the document upload list and the drop zone
+app.mount('#app')

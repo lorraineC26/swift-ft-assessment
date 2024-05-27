@@ -50,7 +50,8 @@ header {
   color: #aaa;
 }
 
-#drop-zone label {
+
+/* #drop-zone label {
   padding: 8px 12px;
   color: #fff;
   background-color: #1b995e;
@@ -59,7 +60,7 @@ header {
 
 #drop-zone input {
   display: none;
-}
+} */
 
 iframe {
   border: none;
