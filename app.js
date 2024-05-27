@@ -1,5 +1,4 @@
 const app = Vue.createApp({
-  
   //  returns the initial state
   data() {
     return { documents: [], fileName: '', pdfUrl: null }
@@ -22,9 +21,12 @@ const app = Vue.createApp({
     uploadDoc() {
       // debugging
       console.log('Uploading doc:', this.fileName)
-      
-      this.documents.push(this.fileName)
-      this.fileName = ''
+
+      // only allow uploading if there is a file name
+      if (this.fileName !== '') {
+        this.documents.push(this.fileName)
+        this.fileName = ''; // reset the file name after uploading
+      }
     }
   }
 })
