@@ -28,3 +28,7 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+.eslintrc.cjs
+.gitignore
+.prettierrc.json
