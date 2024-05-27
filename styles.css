@@ -1,0 +1,56 @@
+/* Add this to the existing styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Jivitri', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #1b995e;
+  color: white;
+  text-align: center;
+}
+
+#user-docs {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#user-input {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+#drop-zone p {
+  color: #aaa;
+}
+
+iframe {
+  border: none;
+  margin-top: 1rem;
+}
