@@ -24,3 +24,9 @@ This project is a frontend assessment built using Vue.js. It allows users to upl
 <p align="center">
   <img src=https://github.com/lorraineC26/swift-ft-assessment/blob/main/public/00overview.png?raw=true alt="hero" width="500px" style="display: block; margin: 0 auto;">
 </p>
+
+## Tach Stacks
+- Vue.js
+- JavaScript
+- HTML
+- CSS
