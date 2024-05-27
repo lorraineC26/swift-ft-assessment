@@ -27,6 +27,14 @@ const app = Vue.createApp({
         this.documents.push(this.fileName)
         this.fileName = ''; // reset the file name after uploading
       }
+    },
+
+    deleteDoc(index) {
+      // debugging
+      console.log('Deleting doc:', this.documents[index])
+
+      // remove the document from the list
+      this.documents.splice(index, 1)
     }
   }
 })

@@ -43,7 +43,25 @@ header {
   outline: none;
   border: none;
   margin-left: 5px;
+  cursor: pointer;
 }
+
+#user-docs button:hover {
+  background-color: #0e6640;
+}
+
+#user-docs .delete-button {
+  padding: 6px 12px;
+  background-color: #ff6e6c; 
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#user-docs .delete-button:hover {
+  background-color: #c0392b; 
+}
+
+
 
 #user-input {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
@@ -66,7 +84,7 @@ header {
 }
 
 
-/* #drop-zone label {
+#drop-zone label {
   padding: 8px 12px;
   color: #fff;
   background-color: #1b995e;
@@ -75,7 +93,7 @@ header {
 
 #drop-zone input {
   display: none;
-} */
+}
 
 iframe {
   border: none;
